@@ -1,0 +1,13 @@
+C:\Users\Fernanda\source\repos\StringCleanerTeix\StringCleanerTeix\bin\Debug\StringCleanerTeix.exe.config
+C:\Users\Fernanda\source\repos\StringCleanerTeix\StringCleanerTeix\bin\Debug\StringCleanerTeix.exe
+C:\Users\Fernanda\source\repos\StringCleanerTeix\StringCleanerTeix\bin\Debug\StringCleanerTeix.pdb
+C:\Users\Fernanda\source\repos\StringCleanerTeix\StringCleanerTeix\bin\Debug\StringCleanerTeix.xml
+C:\Users\Fernanda\source\repos\StringCleanerTeix\StringCleanerTeix\bin\Debug\DotNetAobScanMemory.dll
+C:\Users\Fernanda\source\repos\StringCleanerTeix\StringCleanerTeix\obj\Debug\StringCleanerTeix.vbprojResolveAssemblyReference.cache
+C:\Users\Fernanda\source\repos\StringCleanerTeix\StringCleanerTeix\obj\Debug\StringCleanerTeix.Resources.resources
+C:\Users\Fernanda\source\repos\StringCleanerTeix\StringCleanerTeix\obj\Debug\StringCleanerTeix.vbproj.GenerateResource.cache
+C:\Users\Fernanda\source\repos\StringCleanerTeix\StringCleanerTeix\obj\Debug\StringCleanerTeix.vbproj.CoreCompileInputs.cache
+C:\Users\Fernanda\source\repos\StringCleanerTeix\StringCleanerTeix\obj\Debug\StringCleanerTeix.vbproj.CopyComplete
+C:\Users\Fernanda\source\repos\StringCleanerTeix\StringCleanerTeix\obj\Debug\StringCleanerTeix.exe
+C:\Users\Fernanda\source\repos\StringCleanerTeix\StringCleanerTeix\obj\Debug\StringCleanerTeix.xml
+C:\Users\Fernanda\source\repos\StringCleanerTeix\StringCleanerTeix\obj\Debug\StringCleanerTeix.pdb
