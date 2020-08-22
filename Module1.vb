@@ -15,7 +15,7 @@ Module Module1
     Dim proces As String
     Dim hexstr As String
     Sub Main()
-        Console.Title = "String Cleaner By Teix"
+        Console.Title = "String Checker Based on teix work"
         Console.ForegroundColor = ConsoleColor.White
         Console.WriteLine("Please, Put the process ( Don´t use extension ) :")
         proces = Console.ReadLine()
@@ -43,16 +43,16 @@ Module Module1
                 Else
                     For ic As Integer = 0 To Founds.Count - 1
                         ' Menssage of String Found
-                        Scan.WriteArray(Founds(i), "00")
+          
                         Console.ForegroundColor = ConsoleColor.Green
-                        Console.WriteLine("The string " & str & " is possible removed on " & proces)
+                        Console.WriteLine("The string " & str & " is trouvé on " & proces)
                         Console.ReadLine()
                         'Information if you want.
-                        'Console.WriteLine("+--------+")
-                        'Console.WriteLine("String : " & str)
-                        'Console.WriteLine("Process : " & proces)
-                        'Console.WriteLine("Quantity : " & Founds.Count)
-                        'Console.WriteLine("+--------+")
+                        Console.WriteLine("+--------+")
+                        Console.WriteLine("String : " & str)
+                        Console.WriteLine("Process : " & proces)
+                        Console.WriteLine("Quantity : " & Founds.Count)
+                        Console.WriteLine("+--------+")
                     Next
                 End If
             End If
