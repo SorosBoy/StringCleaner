@@ -12,16 +12,19 @@ Module Module1
     Dim Founds As IntPtr()
     Dim bytestr As String
     Dim str As String
+    Dim path As String
     Dim proces As String
     Dim hexstr As String
+    Dim fileReader As String
     Sub Main()
-        Console.Title = "String Cleaner By Teix"
+        Console.Title = "String Cheker based on Teix work"
         Console.ForegroundColor = ConsoleColor.White
         Console.WriteLine("Please, Put the process ( Don´t use extension ) :")
         proces = Console.ReadLine()
-        Console.WriteLine("Please, Put the string ( ex: jna.z ) :")
-        str = Console.ReadLine()
+        Console.WriteLine("Please, Put the path for the txt ( ex: folder/file.txt ) :")
+        path = Console.ReadLine()
         Console.WriteLine("Searching for process " & proces & "...")
+        
         SearchProc()
     End Sub
     Public Sub RemoveString()
@@ -45,14 +48,14 @@ Module Module1
                         ' Menssage of String Found
                         Scan.WriteArray(Founds(i), "00")
                         Console.ForegroundColor = ConsoleColor.Green
-                        Console.WriteLine("The string " & str & " is possible removed on " & proces)
+                Console.WriteLine("The string " & str & " se trouve bien dans " & proces)
                         Console.ReadLine()
                         'Information if you want.
-                        'Console.WriteLine("+--------+")
-                        'Console.WriteLine("String : " & str)
-                        'Console.WriteLine("Process : " & proces)
-                        'Console.WriteLine("Quantity : " & Founds.Count)
-                        'Console.WriteLine("+--------+")
+                        Console.WriteLine("+--------+")
+                        Console.WriteLine("String : " & str)
+                        Console.WriteLine("Process : " & proces)
+                        Console.WriteLine("Quantity : " & Founds.Count)
+                        Console.WriteLine("+--------+")
                     Next
                 End If
             End If
@@ -69,8 +72,16 @@ Module Module1
                     Console.WriteLine("There are two process with same name, please kill one.")
                     Console.ReadLine()
                 Else
-                    Console.WriteLine("Removing string " & str & " on " & proces & "...")
+            fileReader = My.Computer.FileSystem.ReadAllText(str)
+          For Each Line As String In File.ReadLines(str)
+           'YourTextbox.Text = line
+            Console.WriteLine("Je cherche la string " & line & " on " & proces & "...")
+            str = line;
                     RemoveString()
+            await Task.Delay(500)//Await a second
+        Next
+        'Console.WriteLine("Je cherche la string " & str & " on " & proces & "...")
+                    'RemoveString()
                 End If
                 Console.ForegroundColor = ConsoleColor.Red
                 Console.WriteLine("The process : " & proces & " don´t exist.")
